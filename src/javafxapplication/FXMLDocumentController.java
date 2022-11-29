@@ -101,10 +101,10 @@ try {
     public static double completing(double a, double b, double x) throws Exception {
         double y;
         if (x < 6) {
-            y = a / x + b / x * x;
+             y = a / x + b / (x * x);
             //label_otvet.setText("Ответ: " + String.format("%.2f",y));
         } else {
-            y = a * 2 * (x + b);
+            y = (a * a) * (x + b);
             //label_otvet.setText("Ответ: " + String.format("%.2f",y));
         }
         if (!(Double.isNaN(y)) && (!Double.isInfinite(y))) {
